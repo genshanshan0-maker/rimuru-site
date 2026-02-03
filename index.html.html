@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Simple Site</title>
+  <style>
+    /* 超軽量：画像・JSなし、最小限CSS */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header { text-align: center; padding-top: 48px; }
+    h1 {
+      margin-bottom: 16px;
+      font-size: 72px; /* さらに大きく */
+      letter-spacing: 0.08em; /* 文字間を広げてカッコよく */
+      text-transform: uppercase; /* 英字を強調 */
+      background: linear-gradient(90deg, #38bdf8, #818cf8); /* グラデーション */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 { margin-top: 0; font-size: 18px; }
+    p { margin: 0.5em 0; }
+    .card {
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      background: #020617;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .profile-text { flex: 1; }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #38bdf8;
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid #38bdf8;
+      border-radius: 999px;
+      font-size: 12px;
+      margin: 4px 6px 0 0;
+      color: #38bdf8;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; font-size: 13px; color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rimuru</h1>
+    
+    
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>👤 自己紹介</h2>
+      <div class="profile">
+        <div class="profile-text">
+          <p>
+            俺はRunaだよ。<br />
+            フォートナイトや原神が好き。<br />
+            🔥 死と生の境目も、遊び心で楽しむタイプ。
+          </p>
+        </div>
+        <img alt="Genshin character" src="https://pbs.twimg.com/media/FXrN7aJUYAQyR-U?format=jpg&name=small" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>🛠 スキル・興味</h2>
+      <div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">ウェブデザイナー</span>
+        <span class="tag">PC制作</span>
+        <span class="tag">ゲーム</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>📁 作品・リンク</h2>
+      <ul>
+        <li><a href="https://github.com/genshanshan0-maker" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@黒閃bot虎杖" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://gen-s-world.vercel.app/" target="_blank" rel="noopener">ポートフォリオ</a></li>
+        <li><a href="https://mrdoob.com/projects/chromeexperiments/google-gravity/" target="_blank" rel="noopener">Google アンチグラビティ</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Rimuru
+  </footer>
+</body>
+</html>
